@@ -55,6 +55,18 @@
             padding: 15px 0;
             margin-top: 40px;
         }
+
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Space between images */
+        }
+
+            .image-row img {
+                width: 48%; /* Adjust width so both images fit within the row */
+                max-width: 600px;
+                height: auto; /* Maintain aspect ratio */
+            }
     </style>
 </head>
 <body>
@@ -67,6 +79,10 @@
         <section>
             <h2>About Our Dispensing Machines</h2>
             <p>Our cutting-edge dispensing machines are designed to meet the demands of high-volume, high-precision manufacturing environments. With decades of industry experience, we provide solutions that ensure consistent product quality, reduce waste, and increase operational efficiency for large-scale factories.</p>
+            <div class="image-row">
+                <img src="Picture\dispensing-machines-1.jpg" alt="Dispensing Machine 1">
+                <img src="Picture\dispensing-machines-2.jpg" alt="Dispensing Machine 2">
+            </div>
         </section>
 
         <section>
