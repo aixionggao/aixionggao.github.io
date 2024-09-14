@@ -1,3 +1,3 @@
-Hellow Joly, this is your Dispensing-machine project. 
+Hello Joly, this is your Dispensing-machine project. 
 Enjoy.
 :)
