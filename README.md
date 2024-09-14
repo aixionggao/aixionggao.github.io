@@ -1,2 +1,3 @@
-# aixionggao.github.io
-Dispensing machine Info
+Hellow Joly, this is your Dispensing-machine project. 
+Enjoy.
+:)
