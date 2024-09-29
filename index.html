@@ -1,128 +1,157 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dispensing Machine Solutions for Industry</title>
+    <title>Dispensing Machines for Sale</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
 
         header {
-            background-color: #00457C;
+            background-color: #004080;
             color: white;
-            padding: 30px;
+            padding: 20px;
             text-align: center;
         }
 
-        main {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            color: #00457C;
-        }
-
-        .button {
-            background-color: #00457C;
-            color: white;
-            padding: 12px 25px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-            .button:hover {
-                background-color: #00344B;
+            header nav a {
+                margin: 0 15px;
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
             }
 
-        footer {
+        .main-banner {
+            background-image: url('banner.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+            .main-banner h1 {
+                font-size: 3em;
+            }
+
+            .main-banner button {
+                padding: 15px 30px;
+                background-color: #e60000;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 18px;
+            }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            padding: 0 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+
+            .product-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .product-card h2 {
+                font-size: 1.5em;
+                margin: 10px 0;
+            }
+
+        .video-testimonial {
+            text-align: center;
+            margin: 50px 0;
+            padding: 0 20px;
+        }
+
+            .video-testimonial iframe {
+                width: 70%;
+                height: 400px;
+            }
+
+        .footer {
             background-color: #333;
             color: white;
+            padding: 30px 0;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 40px;
         }
 
-        .image-row {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px; /* Space between images */
-        }
-
-            .image-row img {
-                width: 48%; /* Adjust width so both images fit within the row */
-                max-width: 600px;
-                height: auto; /* Maintain aspect ratio */
+            .footer a {
+                color: #ccc;
+                text-decoration: none;
+                margin: 0 15px;
             }
     </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Industry-Leading Dispensing Machine Solutions</h1>
-        <p>Precision. Efficiency. Innovation. Supporting Large-Scale Manufacturing Operations</p>
+        <h1>Your Company Logo</h1>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About Us</a>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>About Our Dispensing Machines</h2>
-            <p>Our cutting-edge dispensing machines are designed to meet the demands of high-volume, high-precision manufacturing environments. With decades of industry experience, we provide solutions that ensure consistent product quality, reduce waste, and increase operational efficiency for large-scale factories.</p>
-            <div class="image-row">
-                <img src="Picture\dispensing-machines-1.jpg" alt="Dispensing Machine 1">
-                <img src="Picture\dispensing-machines-2.jpg" alt="Dispensing Machine 2">
-            </div>
-        </section>
+    <!-- Main Banner Section -->
+    <section class="main-banner">
+        <h1>High-Quality Dispensing Machines</h1>
+        <p>Your one-stop solution for all dispensing machine needs</p>
+        <button>Get a Quote Now</button>
+    </section>
 
-        <section>
-            <h2>Key Features</h2>
-            <ul>
-                <li>Advanced precision technology for accurate fluid dispensing</li>
-                <li>Scalable design to support various production capacities</li>
-                <li>Automated systems for seamless integration into existing production lines</li>
-                <li>Comprehensive technical support and maintenance services</li>
-                <li>Customizable for specific industrial needs</li>
-            </ul>
-        </section>
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="product-card">
+            <img src="combo-machine.jpg" alt="Combo Vending Machine">
+            <h2>Combo Dispensing Machine</h2>
+            <p>Dual temperature zones for snacks and drinks.</p>
+        </div>
+        <div class="product-card">
+            <img src="glue-dispenser.jpg" alt="Glue Dispenser Machine">
+            <h2>Glue Dispenser Machine</h2>
+            <p>Precision dispensing for industrial needs.</p>
+        </div>
+        <div class="product-card">
+            <img src="custom-machine.jpg" alt="Custom Vending Machine">
+            <h2>Custom Vending Machine</h2>
+            <p>Custom-built for specialized products.</p>
+        </div>
+    </section>
 
-        <section>
-            <h2>Industries We Serve</h2>
-            <p>Our dispensing machines are trusted by leading companies in industries such as:</p>
-            <ul>
-                <li><strong>Automotive Manufacturing</strong>: Apply sealants, lubricants, and adhesives with high accuracy.</li>
-                <li><strong>Electronics Production</strong>: Solder paste, conformal coating, and adhesive applications.</li>
-                <li><strong>Medical Device Manufacturing</strong>: Precision dispensing for pharmaceuticals and medical components.</li>
-                <li><strong>Aerospace</strong>: High-precision dispensing for sensitive and critical components.</li>
-            </ul>
-        </section>
+    <!-- Video and Testimonials Section -->
+    <section class="video-testimonial">
+        <h2>See Our Machines in Action</h2>
+        <iframe src="https://www.youtube.com/embed/examplevideo" frameborder="0" allowfullscreen></iframe>
+        <h2>Customer Testimonials</h2>
+        <p>"The machines are reliable and easy to use!" - Client A</p>
+        <p>"Our production efficiency increased by 30%!" - Client B</p>
+    </section>
 
-        <section>
-            <h2>Why Partner With Us?</h2>
-            <ul>
-                <li><strong>Proven Expertise</strong>: With a portfolio of satisfied clients in large-scale production, we bring experience and reliability to every project.</li>
-                <li><strong>Comprehensive Solutions</strong>: We don’t just provide machines, we offer end-to-end solutions—from customization to post-installation support.</li>
-                <li><strong>Cost Efficiency</strong>: Reduce downtime and material waste while improving throughput and product quality.</li>
-                <li><strong>Global Support</strong>: Our dedicated team provides training, maintenance, and technical support worldwide.</li>
-            </ul>
-        </section>
-
-        <a href="#contact" class="button">Contact Us for a Consultation</a>
-    </main>
-
-    <footer id="contact">
-        <p>To discuss your factory’s needs, reach out at <a href="mailto:sales@dispensingmachine.com" style="color: #4CAF50;">sales@dispensingmachine.com</a></p>
-        <p>Phone: +1-800-555-1234 | Address: 123 Industry Rd, Tech City, USA</p>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Contact us: (123) 456-7890 | Email: info@yourcompany.com</p>
+        <a href="#terms">Terms of Service</a>
+        <a href="#privacy">Privacy Policy</a>
+        <p>&copy; 2024 Your Company</p>
     </footer>
+
 </body>
 </html>
