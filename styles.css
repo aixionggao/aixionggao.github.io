@@ -22,23 +22,56 @@ header {
 .main-banner {
     background-image: url('banner.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 100px 0;
     text-align: center;
+    position: relative;
+    width: 100%;
 }
 
-    .main-banner h1 {
-        font-size: 3em;
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .main-banner {
+        background-size: contain; /* Ensures the entire image is visible on smaller screens */
+        padding: 60px 0; /* Adjust padding for smaller screens */
     }
+}
 
-    .main-banner button {
-        padding: 15px 30px;
-        background-color: #e60000;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 18px;
-    }
+.main-banner h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 10px;
+}
+
+.main-banner button {
+    padding: 15px 30px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Additional styling to handle text positioning */
+.main-banner h1, .main-banner button {
+    position: relative;
+    z-index: 1;
+}
+
+.main-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds an overlay for better text visibility */
+    z-index: 0;
+}
+
 
 .products {
     display: flex;
@@ -58,12 +91,20 @@ header {
     .product-card img {
         width: 100%;
         height: auto;
+        max-width: 300px; /* Set a maximum width */
+        max-height: 200px; /* Set a maximum height */
+        object-fit: cover; /* Ensures the image maintains aspect ratio and fits within the area */
     }
 
     .product-card h2 {
         font-size: 1.5em;
         margin: 10px 0;
     }
+
+    .product-card p {
+        color: #555;
+    }
+
 
 .video-testimonial {
     text-align: center;
